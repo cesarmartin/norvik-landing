@@ -24,6 +24,11 @@
         .logo {
             font-size: 2em;
             font-weight: bold;
+            /* Se o logotipo for uma imagem, você pode querer remover o font-size e font-weight, ou ajustar conforme necessário */
+        }
+        .logo-img {
+            max-width: 100%; /* Faz com que a imagem do logotipo seja responsiva */
+            height: auto;
         }
         .message {
             margin-top: 20px;
@@ -37,6 +42,8 @@
 </head>
 <body>
     <div class="container">
+        <!-- Adicionando a imagem do logotipo -->
+        <img src="https://raw.githubusercontent.com/cesarmartin/norvik-landing/main/docs/logo-vertical.png" alt="Logotipo da Norvik Tecnologia Ltda." class="logo-img">
         <div class="logo">Norvik Tecnologia Ltda.</div>
         <div class="message">Nosso site está em desenvolvimento. Em breve, traremos uma plataforma completa com nossas soluções e serviços.</div>
         <div class="contact-info">
