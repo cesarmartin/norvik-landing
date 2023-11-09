@@ -14,42 +14,65 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #fff; /* Change background color to white */
         }
+
         .container {
             text-align: center;
             padding: 20px;
+            max-width: 1000px;
         }
+
+        /* Add a subtle border and shadow to the container */
+        .container {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style the logo section */
+        .logo-section {
+            margin-bottom: 50px;
+        }
+
+        .logo-img {
+            max-width: 250px;
+            height: auto;
+        }
+
         .logo {
             font-size: 2em;
             font-weight: bold;
-            /* Se o logotipo for uma imagem, você pode querer remover o font-size e font-weight, ou ajustar conforme necessário */
+            color: #000; /* Change logo text color to black */
         }
-        .logo-img {
-            max-width: 100%; /* Faz com que a imagem do logotipo seja responsiva */
-            height: auto;
-        }
+
+        /* Style the message section */
         .message {
-            margin-top: 20px;
             font-size: 1.2em;
+            color: #333;
         }
-        .contact-info {
-            margin-top: 30px;
-            font-style: italic;
+
+        .message-container {
+            margin-top: 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Adicionando a imagem do logotipo -->
-        <img src="https://raw.githubusercontent.com/cesarmartin/norvik-landing/main/docs/logo-vertical.png" alt="Logotipo da Norvik Tecnologia Ltda." class="logo-img">
-        <div class="logo">Norvik Tecnologia Ltda.</div>
-        <div class="message">Nosso site está em desenvolvimento. Em breve, traremos uma plataforma completa com nossas soluções e serviços.</div>
+        <div class="logo-section">
+            <img src="https://raw.githubusercontent.com/cesarmartin/norvik-landing/main/docs/logo-vertical.png" alt="Logotipo da Norvik Tecnologia Ltda." class="logo-img">
+        </div>
+
+        <div class="message-container">
+            <div class="message">
+                Em breve, traremos uma plataforma completa com nossas soluções e serviços.
+            </div>
+        </div>
+
         <div class="contact-info">
             <p>Av. Olavo Bilac, s/n, Quadra70 Lote 01 Apt 105 Sala 01, Luziânia - GO, 72804-150</p>
             <p>Email: contato@norvik.com.br | Tel: (61) 9817-0586</p>
-            <p>CNPJ: 52.598.902/0001-75</p>
+            <p>CNPJ: 52.598.902/0001-75 - Norvik Tecnologia LTDA.</p>
         </div>
     </div>
 </body>
